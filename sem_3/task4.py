@@ -3,11 +3,11 @@
 # 45 -> 101101
 # 3 -> 11
 # 2 -> 10
-num = 57
+num = int(input('Введите число в десятичной системе = '))
 s = ''
 while num >1:
     s = s + str(num % 2)
     num = num // 2 
 s = (s + str(num))
 res = s[::-1]
-print(res)
+print(f'Число {num} в двоичной системе = {res}')
